@@ -1,16 +1,10 @@
-body { background-color: skyBlue; min-height:200vh;}/* MORE THAN 75 Xl */
-@media (max-width: 74.9em) { body {background-color: pink;} }/* LESS THAN 75 Lg */
-@media (max-width: 61.9em) { body {background-color: blue;} }/* LESS THAN 62 Md */
-@media (max-width: 47.9em) { body {background-color: green;} }/* LESS THAN 48 Sm */
-@media (max-width: 33.9em) { body {background-color: red;} }/* LESS THAN 34 Xs */
+body { background-color: skyBlue; min-height:200vh;}
 
-/* Navbar Styles */
 .navbar{border-radius:0;}
 .navbar-toggler{border:1px solid rgba(0,0,0,0.2);}
 .navbar-toggler:hover{background:rgb(240,240,240)}
 .navbar-toggler:focus{outline:0;}
 
-/* Navbar Collapse Styles To Stack Items At Mobile Widths*/
 @media(max-width:47.9em) {
     .navbar .navbar-brand {float:none;display: inline-block;}
     .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
@@ -35,14 +29,23 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-shadow: 2px 2px #2aabd2;
 }
 .heroButton {
     text-align: center;
     position: absolute;
-    top: 100%;
+    padding: 16px 32px;
+    top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: #5cb85c;
     color: black;
+    border-radius: 8px;
+    border: black;
+}
+.heroButton:hover {
+    border-radius: 50px;
+    background: #d9534f;
 }
 p{
     font: 15px Arial, sans-serif;
@@ -52,4 +55,29 @@ p.underline{
 }
 p.bold{
     font-weight: bold;
+}
+#ukazky {
+    width: 30%;
+}
+.ukazky > img{
+    width: 100%;
+    height: 100%;
+}
+#seznamUkazek{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#menuNav{
+    background: #a3d7a3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 0;
 }
